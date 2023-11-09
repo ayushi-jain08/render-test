@@ -1,0 +1,133 @@
+body{
+    background-color: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgba(188, 175, 183,0.5); */
+    padding: 10px 80px;
+   background-color: rgb(221, 236, 250);
+   box-shadow: 0 5px 5px rgba(232, 231, 231, 0.893);
+}
+.show .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 120px;
+}
+
+.center  li{
+    list-style-type: none;
+    padding: 0 25px;
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: 0.7s ease-in-out;
+    color: black;
+    cursor: pointer;
+}
+.center li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: 0.7s ease-in-out;
+    color: black;
+    cursor: pointer;
+}
+.icon{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.icon a{
+    color: black;
+}
+.icon .mode, .acc{
+    height: 2.8rem;
+    width: 2.8rem;
+    line-height: 3.2rem;
+    border-radius: 50%;
+    font-size: 1.9rem;
+    box-shadow: .4rem .4rem 1rem #dddcdc,
+    -.4rem -.4rem 1rem #fff;
+    color: #444;
+    background:white;
+   text-align: center;
+   transition: all 0.5s;
+}
+.icon .mode:active, .acc:active{
+    color: #27ae60;
+    box-shadow: 4rem .4rem 1rem #ccc inset,
+    -.4rem -.4rem 1rem #fff inset;
+}
+.icon .pic{
+    width: 55px;
+    height: 55px;
+    border: 8px solid rgb(233, 233, 233);
+    border-radius: 50%;
+}
+.mobile{
+    color: black;
+    display: none;
+}
+.hide .center{
+    display: none;
+}
+@media screen and (max-width: 765px){
+    nav{
+        padding: 10px 50px;
+    }
+    .show .center{
+        display: none;
+    }
+   .hide .center{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 70px;
+        left: -300px;
+        height: 100vh;
+        background:rgb(241, 242, 249);
+        width: 230px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+        padding: 20px 0 0 10px;
+        transition: 0.5s ease-in-out;
+        z-index: 999;
+    }
+    .hide .center li{
+        display: flex;
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        border-radius: 5px; 
+    }
+    .hide .center li:hover{
+        background: #c4cffc;
+    }
+    .hide .center li a{
+        font-size: 20px;
+        align-items: center;
+    }
+    .hide .center li span{
+        margin-right: 20px;
+        font-size: 22px;
+      
+    }
+    .hide .center.active{
+        left: 0;
+    }
+    .mobile{
+        display: block;
+    }
+
+}

@@ -1,0 +1,5 @@
+.chat-page-center{
+    display: grid;
+    height: 91vh;
+   grid-template-columns: 300px 1fr;
+}

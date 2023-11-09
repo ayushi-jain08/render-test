@@ -1,0 +1,17 @@
+.home{
+    /* background-color: cadetblue; */
+    height: 500px;
+    width: 100%;
+    padding: 10px;
+    /* display: flex;
+    align-items: center;
+   justify-content: center; */
+   background-image: url("../../../public/Images/tree.jpg");
+   background-position: left;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.home span{
+    font-size: 45px;
+}

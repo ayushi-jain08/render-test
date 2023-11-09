@@ -1,0 +1,42 @@
+.my-chat{
+    margin-top: 10px;
+    padding: 5px;
+}
+.my-chat .my-chat-details{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.my-chat .my-chat-details .create-btn{
+    padding: 8px 15px;
+    background: rgb(74, 83, 239);
+    outline: none;
+    border: none;
+    font-size: 17px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: white;
+}
+.my-chat .my-chat-details .create-btn:active{
+    background:rgb(111, 118, 255) ;
+}
+.my-chat .conversation{
+    display: flex;
+    font-size: 12px;
+    gap: 5px;
+    padding: 5px;
+  border: 1px solid black;
+    border-radius: 5px;
+   margin: 10px 10px;
+    background: whitesmoke;
+
+}
+.my-chat .conversation:hover{
+    background: rgb(221, 249, 239);
+}
+.my-chat .conversation img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid black;
+}

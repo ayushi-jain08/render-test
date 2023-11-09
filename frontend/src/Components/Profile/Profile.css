@@ -1,0 +1,141 @@
+.profile{
+    height: 100vh;
+    width: 100%;
+}
+.profile .container{
+    max-width: 700px;
+    margin: 30px auto;
+    background: whitesmoke;
+    box-shadow: inset 10px 10px 10px  -1px rgb(10, 99, 169, 0.16),
+    inset  -10px -10px  10px -1px rgb(229, 240, 251)
+    ;
+    padding:20px;  
+}
+.profile .content .top{
+    display: flex;
+    align-items: flex-start;
+   gap: 20px;
+
+}
+.top-left{
+    width: 400px;
+     background: #edf2f6;
+    box-shadow: inset 10px 10px 10px  -1px rgb(10, 99, 169, 0.16),
+    inset  -10px -10px  10px -1px rgb(255, 255, 255,0.70)
+    ;
+   border: 10px solid white;
+    height: 200px;
+    
+}
+.top-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.top-right{
+    width: 420px;
+    
+}
+.profile-head h2{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 5px;
+}
+.profile-head span{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(22, 22, 182);
+}
+.profile-head p{
+    font-size: 18px;
+    margin-top: 5px;
+}
+.profile-about h3{
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 80px;
+}
+.top-end{
+    width: 300px;
+   margin-left: 5rem;
+   margin-top: 10px;
+}
+
+.top-end button{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 8px;
+    width: 100px;
+    background: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    box-shadow: inset 10px 10px 10px  -1px rgb(10, 99, 169, 0.16),
+    inset  -10px -10px  10px -1px rgb(255, 255, 255,0.70)
+    ;
+    margin-left: 40px;
+   
+}
+.top-end button a{
+    color: black;
+    text-decoration: none;
+}
+.top-end button:active{
+    background: white;
+    box-shadow:  10px 10px 10px  -1px rgb(10, 99, 169, 0.16),
+      -10px -10px  10px -1px rgb(255, 255, 255,0.30)
+    ;
+}
+.profile-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+}
+.links h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.links a{
+    color: gray;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.ids{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+.ids span{
+    font-size: 18px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.ids-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+    margin-right: 100px;
+}
+.ids-details span{
+    font-size: 18px;
+    color: black;
+   font-family: 'Times New Roman', Times, serif;
+}
+
