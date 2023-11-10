@@ -277,4 +277,14 @@ res.status(200).json(user)
 })
 module.exports = router;
 
-
+router.get("/user", async(req,res) => {
+  try {
+    const user = await User.find()
+    res.status(200).json({
+      success:true,
+      user
+    })
+  } catch (error) {
+    res.status(500).json({status:500,error})
+  }
+})

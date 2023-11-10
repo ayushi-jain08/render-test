@@ -34,6 +34,9 @@ app.use(fileUpload({
     useTempFiles:true
 }))
 
+app.get("/", async(req,res) => {
+    res.send("hello user")
+})
 app.use("/api", user)
 app.use("/api",product)
 app.use("/api",review)
