@@ -32,13 +32,20 @@ router.get("/categories/:categoryId", async (req, res) => {
 //   ============================ALL GET CATEGORY=======================
 router.get("/categories", async (req, res) => {
   try {
-    const category = await Category.find();
-    res.status(200).json(category);
-  } catch (error) {
-    console.error(err);
-    res.status(500).json({ error: "Server error", err });
+    const categories = await Category.find();
+
+    if (!categories) {
+      // Handle the case where no categories are found
+      return res.status(404).json({ error: "No categories found" });
+    }
+
+    res.status(200).json(categories);
+  } catch (err) {
+    console.error("Error in /categories route:", err);
+    res.status(500).json({ error: "Server error" });
   }
 });
+
 
 // =====================UPDATE CATEGORY===================
 router.patch("/categories/:categoryId", async (req, res) => {

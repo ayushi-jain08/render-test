@@ -72,7 +72,7 @@ router.get("/getproduct", async(req,res) => {
   
   const products = await query;
     if(!products){
-       res.status(400).json({
+       res.status(402).json({
            meassage: "no product found"
        })
     }else{
@@ -83,8 +83,11 @@ router.get("/getproduct", async(req,res) => {
         currentPage: page,
       });
     }
+    console.log("Products retrieved from database:", products);
   } catch (error) {
-    res.status(400).json({
+    console.log(error)
+    res.status(401).json({
+      success: false,
         message: error,
       });
   }
@@ -102,6 +105,7 @@ router.get("/getproduct/:id", async(req,res) => {
               })
         }
     } catch (error) {
+      console.error(error);
         res.status(500).json({meassage: `Server Error: ${error}`})
     }
 })
